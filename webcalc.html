@@ -1,20 +1,19 @@
 <html>
- <head>
-     <script src="scrpit.js"></script>
-     <link rel="stylesheet" type="text/css" href="weblook.css"></link> 
-    </head>
-    <body>
-<div class="alpha">
-    <p>
-      Frist Number <input type="text" id="num1"/>
-      Second Number <input type="text" id="num2"/><br/>
-    </p>
-</div>
-<div class ="answer">
-    Answer <input type="text" id="answer"/>
-</div>
-<div class="charlie"> 
-<input type="button" value = "sum" onclick="sum()"/> 
-</div> 
-</body>
+  <head>
+    <script src="script2.js" defer></script>
+  </head>
+  <body>
+    First Number <input type="text" id="num1" /> 
+    <select id="summ">
+      <option value=""></option>
+      <option value="add">Addition(+)</option>
+      <option value="sub">Subtraction(-)</option>
+      <option value="mult">Multiplication(*)</option>
+      <option value="divide">Division(/)</option>
+    </select>
+    Second Number<input type="text" id="num2" /> 
+    Equal <input type="button" value= "=" id="sum" onclick="sum()" /><br />
+    <span id="answer"> </span>
+    
+  </body>
 </html>
